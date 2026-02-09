@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Store - Lifestyle Sneakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg height="40" width="60" viewBox="0 0 1000 356">
+                        <path fill="#111"
+                            d="M245.8 235.5c-21.4 10.4-57 36.4-86.6 56.3-21.4 14.4-41.8 27.5-47.2 29.3-3.2 1.1-6.5 1.6-9.9 1.6-14.5 0-23.5-10.3-23.5-27 0-6.5 1.1-13.6 3.5-22.3L134.5 54.8c2.4-8.7 3.5-15.8 3.5-21.6C138 14.8 129 4 114.5 4c-9.4 0-18.7 4.3-26.9 12.4-15.1 14.9-27.6 41.2-37.4 78.6L.1 278.7c-1.6 6.2-2.4 11.8-2.4 17 0 14.5 10.3 23.5 27 23.5 10.8 0 21.9-4.3 33.5-13 11.8-8.9 28-23 48.4-42.4l175.6-118.2c-9.7 2.4-21.9 4.9-36.4 7.3z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="search-bar">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+                            stroke="#111" stroke-width="2" />
+                        <path d="M21 21L16 16" stroke="#111" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Search">
+                </div>
+
+                <div class="user-icons">
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="7" r="4" stroke="#111" stroke-width="2" />
+                        <path d="M4 21C4 17.134 7.582 14 12 14C16.418 14 20 17.134 20 21" stroke="#111"
+                            stroke-width="2" />
+                    </svg>
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.707 15.293C4.077 15.923 4.523 17 5.414 17H17M17 17C15.895 17 15 17.895 15 19C15 20.105 15.895 21 17 21C18.105 21 19 20.105 19 19C19 17.895 18.105 17 17 17ZM9 19C9 20.105 8.105 21 7 21C5.895 21 5 20.105 5 19C5 17.895 5.895 17 7 17C8.105 17 9 17.895 9 19Z"
+                            stroke="#111" stroke-width="2" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="promo-banner">
+        <div class="promo-content">
+            <span>Free shipping and refund</span>
+            <span>•</span>
+            <span>Expiration 24h</span>
+            <span>•</span>
+            <span>-15% on the first purchase</span>
+            <span>•</span>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="container">
+
+            <div class="page-header">
+                <h1>LIFESTYLE SNEAKERS</h1>
+                <div class="sort-dropdown">
+                    <button class="sort-btn" id="sortBtn">
+                        Sort by
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M2 4L6 8L10 4" stroke="#111" stroke-width="1.5" />
+                        </svg>
+                    </button>
+                    <div class="sort-menu" id="sortMenu">
+                        <button class="sort-option" data-sort="featured">Featured</button>
+                        <button class="sort-option" data-sort="price-low">Price: Low to High</button>
+                        <button class="sort-option" data-sort="price-high">Price: High to Low</button>
+                        <button class="sort-option" data-sort="newest">Newest</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">All Products</button>
+                <button class="filter-btn" data-category="Electronics">Electronics</button>
+                <button class="filter-btn" data-category="Fashion">Fashion</button>
+                <button class="filter-btn" data-category="Home">Home</button>
+                <button class="filter-btn" data-category="Furniture">Furniture</button>
+                <button class="filter-btn" data-category="Accessories">Accessories</button>
+            </div>
+
+
+            <div class="product-grid" id="productGrid">
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Nike Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
